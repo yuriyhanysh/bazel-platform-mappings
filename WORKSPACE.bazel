@@ -1,0 +1,38 @@
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+### Apple and Swift
+
+http_archive(
+    name = "build_bazel_rules_apple",
+    sha256 = "aa832ca22353b6a21a4be3fc9548e061af92a63e79eec40c645c6495e059d137",
+    strip_prefix = "rules_apple-6dc8288397b84705bd94fdc0d2b007e444055c0d",
+    url = "https://github.com/bazelbuild/rules_apple/archive/6dc8288397b84705bd94fdc0d2b007e444055c0d.tar.gz",
+)
+
+load(
+    "@build_bazel_rules_apple//apple:repositories.bzl",
+    "apple_rules_dependencies",
+)
+
+apple_rules_dependencies()
+
+load(
+    "@build_bazel_rules_swift//swift:repositories.bzl",
+    "swift_rules_dependencies",
+)
+
+swift_rules_dependencies()
+
+load(
+    "@build_bazel_rules_swift//swift:extras.bzl",
+    "swift_rules_extra_dependencies",
+)
+
+swift_rules_extra_dependencies()
+
+load(
+    "@build_bazel_apple_support//lib:repositories.bzl",
+    "apple_support_dependencies",
+)
+
+apple_support_dependencies()

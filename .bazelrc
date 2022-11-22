@@ -1,0 +1,5 @@
+build --incompatible_enable_cc_toolchain_resolution
+build --platform_mappings=tools/platform_mappings
+# build --incompatible_override_toolchain_transition
+
+try-import user.bazelrc

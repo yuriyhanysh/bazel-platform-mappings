@@ -1,0 +1,41 @@
+platforms:
+  //tools:macos_x86_64
+  --cpu=darwin_x86_64
+  --apple_platform_type=macos
+
+  //tools:macos_arm64
+  --cpu=darwin_arm64
+  --apple_platform_type=macos
+
+  //tools:ios_x86_64
+  --cpu=ios_x86_64
+  --apple_platform_type=ios
+
+  //tools:ios_sim_arm64
+  --cpu=ios_sim_arm64
+  --apple_platform_type=ios
+
+  //tools:ios_arm64
+  --cpu=ios_arm64
+  --apple_platform_type=ios
+
+flags:
+  --cpu=darwin_x86_64
+  --apple_platform_type=macos
+  //tools:macos_x86_64
+
+  --cpu=darwin_arm64
+  --apple_platform_type=macos
+  //tools:macos_arm64
+
+  --cpu=ios_x86_64
+  --apple_platform_type=ios
+  //tools:ios_x86_64
+
+  --cpu=ios_sim_arm64
+  --apple_platform_type=ios
+  //tools:ios_sim_arm64
+
+  --cpu=ios_arm64
+  --apple_platform_type=ios
+  //tools:ios_arm64
